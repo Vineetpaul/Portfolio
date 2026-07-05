@@ -50,7 +50,7 @@ const HeroSection = () => {
 
             {/* right section */}
             <Spline 
-            className="hidden md:block absolute xl:right-[-28%] md:right-[-10%] top-[-8%] scale-75"
+            className="absolute xl:right-[-28%] md:right-[-10%] right-[-15%] top-[-4%] scale-50 md:scale-75"
             scene="https://prod.spline.design/T0Ps9izukyjBiS43/scene.splinecode" />
 
         </section>

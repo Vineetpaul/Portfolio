@@ -41,7 +41,7 @@ const services = [
     icon: <FiGlobe size={28} />,
   },
   {
-    title: "Web Deployment",
+    title: "Web Deployment / MERN ",
     description:
       "Deploying applications on Vercel and Render with optimized performance and production-ready setup.",
     icon: <FiServer size={28} />,
