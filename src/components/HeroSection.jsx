@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import Spline from '@splinetool/react-spline'
+import { lazy, Suspense } from "react";
+
+const Spline = lazy(() => import('@splinetool/react-spline'));
 
 const HeroSection = () => {
     return (
@@ -49,9 +51,11 @@ const HeroSection = () => {
             </div>
 
             {/* right section */}
-            <Spline 
-            className="absolute xl:right-[-28%] md:right-[-10%] right-[-15%] top-[-4%] scale-50 md:scale-75"
-            scene="https://prod.spline.design/T0Ps9izukyjBiS43/scene.splinecode" />
+            <Suspense fallback={null}>
+                <Spline 
+                className="absolute xl:right-[-28%] md:right-[-10%] right-[-15%] top-[-4%] scale-50 md:scale-75"
+                scene="https://prod.spline.design/T0Ps9izukyjBiS43/scene.splinecode" />
+            </Suspense>
 
         </section>
     )
